@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <div class="hero-div">
+                <h1>Jimmy's Dinner</h1>
+                <p>The best burgers and pizzas in town.</p>
+            </div>
+        </header>
+
+        <section id="menu-items-section">
+            <!-- <div class="item-container">
+                <div class="item-entry">
+                    <img src="/pizza_item.jpg" alt="A large pepperoni pizza.">
+                    <div class="item-details">
+                        <h2>Pizza</h2>
+                        <p class="ingredients">pepperoni, mushrooms, mozzarella</p>
+                        <p class="price">$14</p>
+                    </div>
+                </div>
+                <button>+</button>
+            </div> -->
+        </section>
+
+        <section id="order-section">
+            <!-- <h2>Your order</h2>
+            <ul>
+                <li>
+                    <div class="order-item">
+                        <p>Pizza</p>
+                        <button class="remove-btn">remove</button>
+                    </div>
+                    <p class="item-price">$14</p>
+                </li>
+            </ul>
+            <div class="order-summary"><p>Total price:</p><p>$26</p></div> -->
+        </section>
+        
+        <section id="payment-modal" class="display-none">
+            <h2 class="payment-header">Enter card details</h2>
+            <form id="payment-form">
+                <input
+                    type="text"
+                    placeholder="John Smith"
+                    name="customerName"
+                    required>
+                <input 
+                    type="number"
+                    placeholder="1234 1234 1234 1234"
+                    name="customerCardNumber"
+                    required>
+                <input
+                    type="password"
+                    placeholder="CVV"
+                    name="customerCVV"
+                    required>
+                <div class="pay-btn-wrap">
+                    <button class="pay-btn" data-pay="pay-btn" type="submit">Pay</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="confirm-modal" class="display-none"></section>
+
+        <footer>
+            <div><p>Ⓒ 2025 - Jimmy's Dinner</p></div>
+        </footer>
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
