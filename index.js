@@ -40,6 +40,8 @@ document.addEventListener('click', function (e) {
         removeAll()
     } else if (e.target.dataset.completeOrder === "complete-order-btn") {
         togglePaymentModal()
+    } else if (e.target.dataset.cancelPayment === "cancel-payment-btn") {
+        togglePaymentModal()
     }
 })
 
